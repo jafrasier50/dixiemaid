@@ -24,7 +24,10 @@ Contrast holds ≥4.5:1 for body text everywhere; orange never carries small tex
 
 1950s diner emblem: hand-lettered script wordmark whose final "d" flows downward into a thick underline ribbon swash, with "BURGERS" in block caps integrated inside the ribbon (swallowtail left end, hand-authored Bézier connector anchored into the d's bowl). Built as pure-path SVGs (no font dependency) via `opentype.js` — script set in Yellowtail, ribbon caps in Archivo Black tracked +0.22em, whole emblem rotated −9°, ribbon letters knocked out with an SVG `<mask>` so the ground shows through.
 
-- `assets/logo/dixiemaid-burgers-white.svg` — white treatment for red/dark grounds (used inline in the hero; decorative, `aria-hidden`, with an sr-only `<h1>`)
+**Current hero mark: script only.** The client asked to omit the ribbon swash for now — the hero uses `dixiemaid-script-white.svg` (just the Yellowtail "Dixie Maid", −9°). The ribbon emblem files below stay as ready-to-use backups.
+
+- `assets/logo/dixiemaid-script-white.svg` / `dixiemaid-script-red.svg` — script-only wordmark (white version inline in the hero; decorative, `aria-hidden`, with an sr-only `<h1>`)
+- `assets/logo/dixiemaid-burgers-white.svg` — ribbon-swash emblem, white treatment for red/dark grounds
 - `assets/logo/dixiemaid-burgers-red.svg` — sign-red single-color version for light grounds
 - `assets/logo/dixiemaid-icecream-classic.svg` — faithful ICE CREAM backup of the original tin-sign mark (earlier parallelogram-banner composition)
 - `assets/logo/dixie-maid-ice-cream-sign-loc.jpg` — Library of Congress photo of a vintage Dixie Maid neon sign (Shreveport, LA), historical reference
