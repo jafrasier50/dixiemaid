@@ -22,13 +22,13 @@ Contrast holds ≥4.5:1 for body text everywhere; orange never carries small tex
 
 ## Logo
 
-Recreation of the client's vintage "Dixie Maid Ice Cream" tin sign (40s–60s): slanted brush script over an angled parallelogram banner, with "ICE CREAM" swapped for "BURGERS". Built as pure-path SVGs (no font dependency) via `opentype.js` — script lettering set in Yellowtail, banner caps in Archivo Black tracked +0.18em, both rotated −9°, banner letters knocked out with an SVG `<mask>` so the ground shows through.
+1950s diner emblem: hand-lettered script wordmark whose final "d" flows downward into a thick underline ribbon swash, with "BURGERS" in block caps integrated inside the ribbon (swallowtail left end, hand-authored Bézier connector anchored into the d's bowl). Built as pure-path SVGs (no font dependency) via `opentype.js` — script set in Yellowtail, ribbon caps in Archivo Black tracked +0.22em, whole emblem rotated −9°, ribbon letters knocked out with an SVG `<mask>` so the ground shows through.
 
 - `assets/logo/dixiemaid-burgers-white.svg` — white treatment for red/dark grounds (used inline in the hero; decorative, `aria-hidden`, with an sr-only `<h1>`)
-- `assets/logo/dixiemaid-burgers-red.svg` — classic red-on-cream colorway (letters cream `#f6ecd8`)
-- `assets/logo/dixiemaid-icecream-classic.svg` — faithful ICE CREAM backup of the original mark
+- `assets/logo/dixiemaid-burgers-red.svg` — sign-red single-color version for light grounds
+- `assets/logo/dixiemaid-icecream-classic.svg` — faithful ICE CREAM backup of the original tin-sign mark (earlier parallelogram-banner composition)
 - `assets/logo/dixie-maid-ice-cream-sign-loc.jpg` — Library of Congress photo of a vintage Dixie Maid neon sign (Shreveport, LA), historical reference
-- Regenerate with the `make-logo.mjs` approach: opentype.js `getPath()` per glyph, manual tracking, tight viewBox computed from rotated corner points.
+- Regenerate with the `make-logo-v2.mjs` approach: opentype.js `getPath()` per glyph, manual tracking, hand-authored ribbon/connector paths, tight viewBox computed from rotated corner points.
 
 ## Typography
 
