@@ -480,7 +480,7 @@ a { color: inherit; }
   position: relative;
   font-family: var(--script);
   font-size: 1.4rem;
-  color: var(--orange-deep);
+  color: var(--ink);
   margin-top: 34px; /* clears the orange mat behind the photo */
 }
 .story-copy h2 {
