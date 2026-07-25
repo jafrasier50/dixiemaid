@@ -20,9 +20,19 @@ Light, bright, high-contrast — built to be read on a phone in Houston sun. Col
 
 Contrast holds ≥4.5:1 for body text everywhere; orange never carries small text on white.
 
+## Logo
+
+Recreation of the client's vintage "Dixie Maid Ice Cream" tin sign (40s–60s): slanted brush script over an angled parallelogram banner, with "ICE CREAM" swapped for "BURGERS". Built as pure-path SVGs (no font dependency) via `opentype.js` — script lettering set in Yellowtail, banner caps in Archivo Black tracked +0.18em, both rotated −9°, banner letters knocked out with an SVG `<mask>` so the ground shows through.
+
+- `assets/logo/dixiemaid-burgers-white.svg` — white treatment for red/dark grounds (used inline in the hero; decorative, `aria-hidden`, with an sr-only `<h1>`)
+- `assets/logo/dixiemaid-burgers-red.svg` — classic red-on-cream colorway (letters cream `#f6ecd8`)
+- `assets/logo/dixiemaid-icecream-classic.svg` — faithful ICE CREAM backup of the original mark
+- `assets/logo/dixie-maid-ice-cream-sign-loc.jpg` — Library of Congress photo of a vintage Dixie Maid neon sign (Shreveport, LA), historical reference
+- Regenerate with the `make-logo.mjs` approach: opentype.js `getPath()` per glyph, manual tracking, tight viewBox computed from rotated corner points.
+
 ## Typography
 
-- **Grand Hotel** (`--script`, self-hosted woff2) — the text logo/wordmark ("Dixie Maid"), photo captions, the quotes heading. Painted-sign soda-fountain script per the client's Dixie Maid lettering reference.
+- **Yellowtail** (`--script`, self-hosted woff2) — the script voice, matching the logo lettering: header/footer wordmark, photo captions, the quotes heading.
 - **Big Shoulders** (`--sign`, variable woff2 100–900) — all headings, menu items, prices, buttons, chips. Condensed signage face; reads like letterboard plastic letters. Uppercase, tracked.
 - System sans (`--body`) — body copy. Plain on purpose; the voice is the guy at the counter.
 
