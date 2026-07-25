@@ -181,11 +181,21 @@ a { color: inherit; }
   filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.15));
 }
 .hero-logo svg { display: block; width: 100%; height: auto; }
+.hero-line {
+  font-family: var(--sign);
+  font-weight: 800;
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: oklch(0.87 0.07 45); /* pale bench orange on red */
+  margin-top: 0.9rem;
+}
 .hero-sub {
-  margin-top: 0.9em;
-  font-size: clamp(1rem, 1.4vw, 1.15rem);
-  max-width: 44ch;
-  color: rgba(255, 255, 255, 0.94);
+  margin-top: 0.7em;
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  font-weight: 500;
+  max-width: 42ch;
+  color: #ffffff;
 }
 .hero-cta {
   display: flex;
